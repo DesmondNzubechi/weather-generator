@@ -50,13 +50,22 @@ form{
 	display: flex;
 	justify-content: center;
 	background: white;
-	padding: 10px 5px;
-	width: 100%;
+	padding: 20px;
+	
 	border-radius: 10px;
 	align-items: center;
 
 }
+i{
+	color: black;
+	font-size: 30px;
 
+}
+i:hover{
+	color: green;
+	transition: .5s;
+	font-weight: 800;
+}
 .search-box{
 	/*padding: 10px ;
 	border: 2px solid lightgray;*/
@@ -75,15 +84,7 @@ form{
 	position: relative;
 	z-index: 1;*/
 }
-i{
-	color: black;
-	font-size: 30px;
-}
-i:hover{
-	color: green;
-	transition: .5s;
-	font-weight: 800;
-}
+
 
 .location{
 	padding: 10px;
