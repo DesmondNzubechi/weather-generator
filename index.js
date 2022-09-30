@@ -3,13 +3,18 @@ const api = {
 	baseurl: "http://api.openweathermap.org/data/2.5/",
 };
 
-let search = document.querySelector('.search-box');
-search.addEventListener('keyup', function pressKey(e) {
-	if (e.keyCode = 13) {
-		let outPut = search.value;
-	getApi(outPut);
-	console.log(outPut);
+let search = document.querySelector('.searchy');
+let searchInput = document.querySelector('.search-box');
+
+search.addEventListener('click', function pressKey(e) {
+	if (searchInput.value === '') {
+		alert('Please Input City Name')
+	} else {
+		console.log(searchInput.value);
+		getApi(searchInput.value);
+		searchInput.value = '';
 	}
+	
 		
 	
 });
@@ -46,7 +51,7 @@ max.innerText = `${Math.round(resApi.main.temp_max)}`;
 let min = document.querySelector('.min');
 min.innerText = `${Math.round(resApi.main.temp_min)}`;
 } catch(err) {
-	alert(err.message);
+	//alert(err.message);
 };
 };
 let createDate = function(time) {
@@ -60,6 +65,6 @@ let createDate = function(time) {
 
 	return `${realDay} ${realDate} ${realMonth} ${realYear}`;
 }; 
-window.addEventListener('load', getApi('enugu'))
+getApi('enugu')
 
 
