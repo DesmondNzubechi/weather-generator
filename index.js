@@ -42,7 +42,7 @@ max.innerText = `${Math.round(resApi.main.temp_max)}`;
 let min = document.querySelector('.min');
 min.innerText = `${Math.round(resApi.main.temp_min)}`;
 } catch(err) {
-	//alert(err.message);
+	alert(err.message);
 };
 };
 let createDate = function(time) {
@@ -57,7 +57,6 @@ let createDate = function(time) {
 	return `${realDay} ${realDate} ${realMonth} ${realYear}`;
 }; 
 
-document.addEventListener('load', getApi('enugu')
-);
+ getApi('enugu');
 
 

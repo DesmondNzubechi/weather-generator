@@ -11,7 +11,7 @@ font-family: 'Poppins', sans-serif;
 	display: block;
 	justify-content: center;
 	text-align: center;
-	padding: 90px 30px;
+	padding: 90px 10px;
 	margin: 0 !important;
 	background:url(cloudy.jpg) ;
 	background-size: cover;
@@ -51,6 +51,7 @@ form{
 	justify-content: center;
 	background: white;
 	padding: 10px 5px;
+	width: 100%;
 	border-radius: 10px;
 	align-items: center;
 
