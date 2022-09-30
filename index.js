@@ -6,20 +6,7 @@ let wrap = document.querySelector('.app-wrap');
 let search = document.querySelector('.searchy');
 let searchInput = document.querySelector('.search-box');
 
-wrap.innerHTML += `<main class="main">
-	<section class="location">
-			<div class="city">Enugu, NG</div>
-			<div class="date"> Wednesday 9 August 2022</div>
 
-		</section>
-		<div class="current">
-			<div class="temp"><span class="tempy">40</span><span>°C</span></div>
-			<div class="weather">Clouds</div>
-			<div class="hi-low"><span class="max">13</span>°C/<span class="min">6.11</span>°c</div>
-		</div>
-	</main>
-</div>
-`;
 
 search.addEventListener('click', function pressKey(e) {
 	if (searchInput.value === '') {
