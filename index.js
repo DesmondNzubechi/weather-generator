@@ -13,9 +13,7 @@ search.addEventListener('click', function pressKey(e) {
 		console.log(searchInput.value);
 		getApi(searchInput.value);
 		searchInput.value = '';
-	}
-	
-		
+	}	
 	
 });
 
@@ -36,16 +34,7 @@ let getApi = async function(outCome) {
 
   let weather = document.querySelector('.weather');
   weather.innerText = `${resApi.weather[0].main}`
-  /*let bc = weather;
-  console.log(bc)
   
-  if (bc.innerText === 'Clouds') {
-  	let app = document.querySelector('.app-wrap');
-app.style.backgroundColor = 'blue'
-  } else {
-app.style.backgroundColor = 'blue'
-  }
-  */
 let max = document.querySelector('.max');
 max.innerText = `${Math.round(resApi.main.temp_max)}`;
 let min = document.querySelector('.min');
@@ -65,6 +54,8 @@ let createDate = function(time) {
 
 	return `${realDay} ${realDate} ${realMonth} ${realYear}`;
 }; 
-getApi('enugu')
+
+document.addEventListener('load', getApi('enugu')
+);
 
 

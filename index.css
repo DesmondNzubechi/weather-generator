@@ -63,7 +63,7 @@ header{
 }
 i{
 	color: black;
-	font-size: 50px;
+	font-size: 30px;
 }
 i:hover{
 	color: green;
@@ -77,9 +77,10 @@ form{
 	display: flex;
 	justify-content: center;
 	background: white;
-	padding: 20px;
+	padding: 10px 5px;
 	border-radius: 10px;
 	align-items: center;
+	
 }
 
 .location{
